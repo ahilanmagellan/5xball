@@ -1,0 +1,25 @@
+# Render Blueprint — позволяет развернуть бэкенд в один клик через
+# "New +" -> "Blueprint" на render.com, указав этот репозиторий.
+# PostgreSQL сюда намеренно не включён: используйте отдельный бесплатный
+# Neon/Supabase и впишите его connection string в DATABASE_URL вручную
+# (см. README -> "Публикация в интернете").
+services:
+  - type: web
+    name: bookmaker-simulator
+    env: node
+    plan: free
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_TTL_DAYS
+        value: "30"
+      - key: USE_MOCK_ODDS
+        value: "true"
+      - key: DATABASE_URL
+        sync: false
