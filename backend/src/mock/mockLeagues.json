@@ -1,0 +1,68 @@
+{
+  "world_cup": {
+    "name": "Чемпионат мира",
+    "thesportsdb_league_id": 4429,
+    "sort_order": 1,
+    "teams": [
+      "Brazil", "Argentina", "France", "England",
+      "Germany", "Spain", "Portugal", "Netherlands"
+    ]
+  },
+  "epl": {
+    "name": "Английская Премьер-лига",
+    "api_sport_key": "soccer_epl",
+    "thesportsdb_league_id": 4328,
+    "sort_order": 2,
+    "teams": [
+      "Arsenal", "Manchester City", "Liverpool", "Chelsea",
+      "Manchester United", "Tottenham", "Newcastle", "Aston Villa"
+    ]
+  },
+  "la_liga": {
+    "name": "Ла Лига",
+    "api_sport_key": "soccer_spain_la_liga",
+    "thesportsdb_league_id": 4335,
+    "sort_order": 3,
+    "teams": [
+      "Real Madrid", "Barcelona", "Atletico Madrid", "Sevilla",
+      "Real Sociedad", "Villarreal", "Athletic Bilbao", "Valencia"
+    ]
+  },
+  "serie_a": {
+    "name": "Серия А",
+    "thesportsdb_league_id": 4332,
+    "sort_order": 4,
+    "teams": [
+      "Juventus", "Inter Milan", "AC Milan", "Napoli",
+      "AS Roma", "Lazio", "Atalanta", "Fiorentina"
+    ]
+  },
+  "bundesliga": {
+    "name": "Бундеслига",
+    "thesportsdb_league_id": 4331,
+    "sort_order": 5,
+    "teams": [
+      "Bayern Munich", "Borussia Dortmund", "RB Leipzig", "Bayer Leverkusen",
+      "Eintracht Frankfurt", "VfL Wolfsburg", "Borussia Monchengladbach", "Werder Bremen"
+    ]
+  },
+  "ligue_1": {
+    "name": "Лига 1",
+    "thesportsdb_league_id": 4334,
+    "sort_order": 6,
+    "teams": [
+      "PSG", "Marseille", "Monaco", "Lyon",
+      "Lille", "Rennes", "Nice", "Lens"
+    ]
+  },
+  "ucl": {
+    "name": "Лига Чемпионов",
+    "api_sport_key": "soccer_uefa_champs_league",
+    "thesportsdb_league_id": 4480,
+    "sort_order": 7,
+    "teams": [
+      "Bayern Munich", "PSG", "Inter Milan", "Borussia Dortmund",
+      "Juventus", "Porto", "Benfica", "PSV Eindhoven"
+    ]
+  }
+}

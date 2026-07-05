@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+<title>Симулятор Букмекера</title>
+<link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+
+  <!-- Экран входа/регистрации, показывается пока пользователь не авторизован -->
+  <div id="auth-screen" class="auth-screen hidden"></div>
+
+  <!-- Основное приложение -->
+  <div id="app" class="app hidden">
+    <header class="topbar">
+      <div class="topbar-user">
+        <span id="topbar-avatar" class="topbar-avatar">⚽</span>
+        <span id="topbar-username" class="topbar-username">—</span>
+      </div>
+      <div class="topbar-balance">
+        <span class="topbar-balance-icon">💰</span>
+        <span id="topbar-balance">0</span>
+        <span class="topbar-balance-currency">₽</span>
+      </div>
+    </header>
+
+    <main id="screen-root" class="screen-root"></main>
+
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-screen="matches">
+        <span class="nav-icon">🏆</span><span class="nav-label">Матчи</span>
+      </button>
+      <button class="nav-btn" data-screen="bets">
+        <span class="nav-icon">📋</span><span class="nav-label">Ставки</span>
+      </button>
+      <button class="nav-btn" data-screen="earn">
+        <span class="nav-icon">💎</span><span class="nav-label">Заработок</span>
+      </button>
+      <button class="nav-btn" data-screen="friends">
+        <span class="nav-icon">👥</span><span class="nav-label">Друзья</span>
+      </button>
+      <button class="nav-btn" data-screen="profile">
+        <span class="nav-icon">👤</span><span class="nav-label">Профиль</span>
+      </button>
+    </nav>
+  </div>
+
+  <div id="modal-root"></div>
+  <div id="toast-root" class="toast-root"></div>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
